@@ -1,0 +1,42 @@
+{
+  "categorias": [
+    {
+      "name": "Bebidas",
+      "id": 1
+    },
+    {
+      "name": "Sobremesas",
+      "id": 2
+    },
+    {
+      "name": "Entradas",
+      "id": 3
+    },
+    {
+      "name": "Pratos Principais",
+      "id": 4
+    },
+    {
+      "name": "Acompanhamentos",
+      "id": 5
+    }
+  ],
+  "imagens": [
+    {
+      "Url": "https://i.pinimg.com/originals/59/fb/1c/59fb1cb8492dc88ff25220053d2f819c.jpg",
+      "id": 1
+    },
+    {
+      "Url": "https://cdn.shopify.com/s/files/1/0155/0195/files/Blog_Post_Header_Image_1_1024x1024.jpg?v=1593026933",
+      "id": 2
+    },
+    {
+      "Url": "https://pyxis.nymag.com/v1/imgs/6e0/e05/0095ecebf98322c46a79d3746214c5deb8-bowl-egg-shop-spandex.rsquare.w768.jpg",
+      "id": 3
+    },
+    {
+      "Url": "https://img.elo7.com.br/product/zoom/22565B3/adesivo-parede-prato-comida-frango-salada-restaurante-lindo-adesivo-parede.jpg",
+      "id": 4
+    }
+  ]
+}

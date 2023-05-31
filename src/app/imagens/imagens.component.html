@@ -1,0 +1,32 @@
+<body>
+    
+    <br>
+    <div class="Content">
+        <h1>Lista de Imagens </h1>
+        <br><br>
+                <button routerLink="/categorias">Ir para Categorias</button>
+                <button routerLink="/produtos">Ir para Produtos</button><br><br>
+        <div class="Todo-List">
+            <span>Insira a url da imagem  </span>
+            <input type="text" [(ngModel)]="imagem">
+            <button type="button"(click)="adicionaimagem()">Adicionar</button>
+            <ol>
+                <li *ngFor="let imagem of imagens">
+                    <img src={{imagem.Url}} alt=`{{imagem.id}}`> 
+                    <button type="button" (click)="editarimagem(imagem)">Ediitar</button>
+                    <button type="button" (click)="removerimagem(imagem)">Remover</button>
+                </li>
+                
+
+            </ol>                                            
+        </div>
+        
+
+    </div>
+    
+</body>
+
+
+
+
+

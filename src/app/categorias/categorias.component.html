@@ -1,0 +1,30 @@
+<body>
+    
+    <br>
+    <div class="Content">
+        <h1>Lista de Categorias </h1>
+        <br><br>
+                <button routerLink="/imagens">Ir para Imagens</button>
+                <button routerLink="/produtos">Ir para Produtos</button><br><br>
+        <div class="Todo-List">
+            <span>Insira a nova categoria   </span>
+            <input type="text" [(ngModel)]="categoria">
+            <button type="button"(click)="adicionaCategoria()">Adicionar</button>
+            <ol>
+                <li *ngFor="let categoria of categorias">
+                    {{categoria.name}}
+                    <button type="button" (click)="editarCategoria(categoria)">Ediitar</button>
+                    <button type="button" (click)="removerCategoria(categoria)">Remover</button>
+                </li>
+                    
+            </ol>                                            
+        </div>
+        
+
+    </div>
+    
+</body>
+
+
+
+
