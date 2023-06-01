@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 @Component({
   selector: 'app-categorias',
@@ -9,12 +9,17 @@ export class CategoriasComponent {
  categorias:any[]=[]
  categoria: string=""  
   constructor(private httpClient:HttpClient) {
-
+    console.log("oi construtor")
   }
+ 
+ 
   ngOnInit(): void {
+    
     this.mostraDados();
   
   }
+  
+
   mostraDados(){
     this.httpClient.get("http://localhost:3000/categorias").subscribe({
       next: (snapshot: any) => {
@@ -25,6 +30,7 @@ export class CategoriasComponent {
         alert("Deu ruim")
       }
     })
+    console.log("oi")
   }
 
   adicionaCategoria() {
@@ -41,10 +47,18 @@ export class CategoriasComponent {
     })
   }
   removerCategoria(categoria: any) {
+    var result = window.prompt("Digite sim para remover e nao para manter");
+    
+    if( !result ||(result && result.toLowerCase() != "sim")){
+      alert("cancelado!!")
+      return;
+    }
+    
     console.log(categoria)
     this.httpClient.delete("http://localhost:3000/categorias/" + categoria.id).subscribe({
       next: () => {
         this.mostraDados();
+        alert("Removido com sucesso")
       },
       error: (error) => {
         alert("Deu ruim")
