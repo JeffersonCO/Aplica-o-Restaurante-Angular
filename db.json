@@ -1,8 +1,24 @@
 {
   "categorias": [
     {
-      "name": "skdhvuohdf",
+      "name": "Bebidas",
       "id": 1
+    },
+    {
+      "name": "Entrada",
+      "id": 2
+    },
+    {
+      "name": "Prato principal",
+      "id": 3
+    },
+    {
+      "name": "Sobremesa",
+      "id": 4
+    },
+    {
+      "name": "Guarnição",
+      "id": 5
     }
   ],
   "imagens": [
@@ -21,6 +37,34 @@
     {
       "Url": "https://th.bing.com/th/id/OIP.69tLcbde6Nk_OmI5uISUMwHaEO?pid=ImgDet&rs=1",
       "id": 5
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "name": "macarrao ao molho",
+      "description": "Delicioso macarone para voce",
+      "image": {
+        "Url": "https://cdn.shopify.com/s/files/1/0155/0195/files/Blog_Post_Header_Image_1_1024x1024.jpg?v=1593026933",
+        "id": 2
+      },
+      "category": {
+        "name": "Guarnição",
+        "id": 5
+      }
+    },
+    {
+      "name": "Churrasco a lacarte",
+      "description": "Delivery de carne",
+      "image": {
+        "Url": "https://cdn.shopify.com/s/files/1/0155/0195/files/Blog_Post_Header_Image_1_1024x1024.jpg?v=1593026933",
+        "id": 2
+      },
+      "category": {
+        "name": "Entrada",
+        "id": 2
+      },
+      "id": 2
     }
   ]
 }

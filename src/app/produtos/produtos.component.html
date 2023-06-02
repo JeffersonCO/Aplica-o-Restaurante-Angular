@@ -1,3 +1,43 @@
-<p>produtos works!</p>
-<button routerLink="/categorias">Ir para Categorias</button>
-<button routerLink="/imagens">Ir para Imagens</button>
+<div class="Content">
+    <h1>Lista de produtos </h1>
+    <br><br>
+    <button routerLink="/categorias">Ir para Categorias</button>
+    <button routerLink="/imagens">Ir para imagens</button><br><br>
+    <button routerLink="/produtos/0">Novo produto</button><br><br>
+
+
+    <ol>
+        <li *ngFor="let produto of produtos">
+            <mat-card class="example-card">
+                <mat-card-header>
+
+                    <mat-card-title>{{produto.name}}</mat-card-title>
+                    <mat-card-subtitle>{{produto.category.name}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="produto.image.Url" alt="imagem">
+                <mat-card-content>
+                    <p>
+                        {{produto.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+
+                    <button mat-fab extended color="accent" type="button" routerLink="/produtos/{{produto.id}}">
+                        <mat-icon>edit</mat-icon>
+                        Editar
+                    </button>
+
+                    <button mat-fab extended color="accent" type="button" (click)="removerproduto(produto)">
+                        <mat-icon>delete</mat-icon>
+                        Remover
+                    </button>
+
+                </mat-card-actions>
+            </mat-card>
+            <br>
+
+        </li>
+
+        
+    </ol>
+</div>

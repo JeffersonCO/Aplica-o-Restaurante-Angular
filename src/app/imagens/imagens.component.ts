@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient ,HttpClientModule,  HttpRequest, HttpResponse, HttpEventType} from '@angular/common/http'
 @Component({
   selector: 'app-imagens',
   templateUrl: './imagens.component.html',

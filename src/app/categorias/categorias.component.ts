@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 @Component({
   selector: 'app-categorias',
@@ -30,7 +30,7 @@ export class CategoriasComponent {
         alert("Deu ruim")
       }
     })
-    console.log("oi")
+    
   }
 
   adicionaCategoria() {

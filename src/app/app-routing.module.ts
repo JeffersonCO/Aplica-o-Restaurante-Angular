@@ -4,11 +4,16 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ImagensComponent } from './imagens/imagens.component';
 import { CommonModule } from '@angular/common';
+import { ProdutosDetalhesComponent } from './produtos/produtos-detalhes/produtos-detalhes.component';
 
 const routes: Routes = [
   {
     path:"produtos",
     component:ProdutosComponent
+  },
+  {
+    path:"produtos/:id",
+    component:ProdutosDetalhesComponent
   },
   {
     path:"categorias",
