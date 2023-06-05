@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { LoginComponent } from './login/login.component';
+import { LoginDetalhesComponent } from './login/login-detalhes/login-detalhes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,10 @@ import {MatIconModule} from '@angular/material/icon';
     ProdutosComponent,
     CategoriasComponent,
     ImagensComponent,
-    ProdutosDetalhesComponent
+    ProdutosDetalhesComponent,
+    
+    LoginComponent,
+    LoginDetalhesComponent
   ],
   imports: [
     BrowserModule,

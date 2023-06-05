@@ -5,6 +5,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { ImagensComponent } from './imagens/imagens.component';
 import { CommonModule } from '@angular/common';
 import { ProdutosDetalhesComponent } from './produtos/produtos-detalhes/produtos-detalhes.component';
+import { LoginComponent } from './login/login.component';
+import { LoginDetalhesComponent } from './login/login-detalhes/login-detalhes.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path:"imagens",
     component:ImagensComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"login/:id",
+    component:LoginDetalhesComponent
   },
   {
     path:"**",
