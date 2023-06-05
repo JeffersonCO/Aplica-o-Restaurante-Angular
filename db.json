@@ -66,5 +66,43 @@
         "id": 2
       }
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "marcos",
+      "email": "jefferson@jrfferson.com",
+      "password": "123456"
+    },
+    {
+      "name": "thales",
+      "email": "thales@thales.com",
+      "password": "123789456",
+      "id": 2
+    },
+    {
+      "id": "0",
+      "name": "Bruno",
+      "email": "bruno@bruno.com",
+      "password": "1454630"
+    },
+    {
+      "name": "rafael",
+      "email": "rafael@rafel.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "sadfgwsfdg",
+      "email": "ADFADF@DDMNFSLND",
+      "password": "123456489",
+      "id": 4
+    },
+    {
+      "name": "sdrgsrgfs",
+      "email": "aeefasergf@dffhdsfhsh",
+      "password": "12313156464",
+      "id": 5
+    }
   ]
 }

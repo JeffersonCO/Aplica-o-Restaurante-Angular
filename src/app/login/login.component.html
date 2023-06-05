@@ -1,1 +1,20 @@
-<p>login works!</p>
+
+<h1>Login</h1>
+
+<div >
+    <span>Insira o nome de ususario: </span>
+    <input type="text" [(ngModel)]="login"><br>
+    <span>Insira a senha : </span>
+    <input type="text" [(ngModel)]="password"><br><br>
+    
+    <button mat-fab extended color="accent" type="button" routerLink="/usuarios/0">
+        <mat-icon>create</mat-icon>
+        Criar conta
+    </button>
+    <button mat-fab extended color="accent" type="button" (click)="logar()">
+        <mat-icon>login</mat-icon>
+        Entar
+    </button>
+    
+                                               
+</div>

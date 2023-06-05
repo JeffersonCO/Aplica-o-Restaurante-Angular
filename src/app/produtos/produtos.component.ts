@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import { UserService } from '../services/user.service';
 
 
 @Component({
@@ -12,10 +13,12 @@ export class ProdutosComponent {
   produtos: any[] = []
 
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient,
+    private userService: UserService) {
 
   }
   ngOnInit(): void {
+    console.log(this.userService.currentUser)
     this.mostraDados();
 
 

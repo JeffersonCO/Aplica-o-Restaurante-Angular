@@ -6,7 +6,9 @@ import { ImagensComponent } from './imagens/imagens.component';
 import { CommonModule } from '@angular/common';
 import { ProdutosDetalhesComponent } from './produtos/produtos-detalhes/produtos-detalhes.component';
 import { LoginComponent } from './login/login.component';
-import { LoginDetalhesComponent } from './login/login-detalhes/login-detalhes.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuariosDetalhesComponent } from './usuarios/usuarios-detalhes/usuarios-detalhes.component';
+
 
 const routes: Routes = [
   {
@@ -30,12 +32,16 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:"login/:id",
-    component:LoginDetalhesComponent
+    path:"usuarios",
+    component:UsuariosComponent
+  },
+  {
+    path:"usuarios/:id",
+    component:UsuariosDetalhesComponent
   },
   {
     path:"**",
-    redirectTo:"produtos"
+    redirectTo:"login"
   }
 ];
 

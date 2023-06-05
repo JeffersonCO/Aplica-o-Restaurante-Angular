@@ -15,7 +15,10 @@ import {MatCardModule} from '@angular/material/card'
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './login/login.component';
-import { LoginDetalhesComponent } from './login/login-detalhes/login-detalhes.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuariosDetalhesComponent } from './usuarios/usuarios-detalhes/usuarios-detalhes.component';
+import { TopbarComponent } from './topbar/topbar.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { LoginDetalhesComponent } from './login/login-detalhes/login-detalhes.co
     ProdutosDetalhesComponent,
     
     LoginComponent,
-    LoginDetalhesComponent
+         UsuariosComponent,
+         UsuariosDetalhesComponent,
+         TopbarComponent,
+    
   ],
   imports: [
     BrowserModule,

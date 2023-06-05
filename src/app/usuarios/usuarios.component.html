@@ -1,0 +1,28 @@
+<div class="Content">
+    <h1>Lista de usuarios </h1>
+    <br><br>
+    <button routerLink="/categorias">Ir para Categorias</button>
+    <button routerLink="/imagens">Ir para imagens</button><br><br>
+    <button routerLink="/usuarios/0">Novo usuario</button><br><br>
+
+
+    <ol>
+        <li *ngFor="let usuario of usuarios">
+            <p>
+                {{usuario.name}} <br>
+                {{usuario.email}}
+            </p>
+            <button mat-fab extended color="accent" type="button" routerLink="/usuarios/{{usuario.id}}">
+                <mat-icon>edit</mat-icon>
+                Editar
+            </button>
+            <button mat-fab extended color="accent" type="button" (click)="excluiUsuario(usuario)">
+                <mat-icon>delete</mat-icon>
+                Remover
+            </button>
+        </li>
+
+        
+    </ol>
+
+</div>
