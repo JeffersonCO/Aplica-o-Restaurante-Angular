@@ -103,6 +103,12 @@
       "email": "aeefasergf@dffhdsfhsh",
       "password": "12313156464",
       "id": 5
+    },
+    {
+      "name": "Jose",
+      "email": "Jose@jose.com",
+      "password": "456123",
+      "id": 6
     }
   ]
 }
